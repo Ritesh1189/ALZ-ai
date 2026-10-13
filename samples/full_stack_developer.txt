@@ -1,0 +1,35 @@
+Maya Lin - Lead Full Stack Software Engineer
+Email: maya.lin@devmail.io | Phone: +1 (555) 876-5432 | Seattle, WA
+LinkedIn: linkedin.com/in/mayalin-dev | GitHub: github.com/mayalin-code
+
+PROFESSIONAL SUMMARY
+Dynamic Full Stack Developer with 4+ years of expertise architecting high-performance web applications, responsive single-page applications (SPAs) with React and TypeScript, and distributed backend services with Node.js, Express, and PostgreSQL. Experienced in Docker containerization, RESTful API design, and automated CI/CD workflows.
+
+TECHNICAL SKILLS
+- Frontend: JavaScript, TypeScript, React, HTML, CSS, Tailwind CSS, Redux, Next.js
+- Backend: Node.js, Express, REST APIs, Python, Django, GraphQL
+- Databases & Storage: SQL, PostgreSQL, MongoDB, Redis
+- Infrastructure & Tools: Docker, Git, CI/CD, Linux, AWS, Unit Testing, Jest, Cypress
+
+WORK EXPERIENCE
+Senior Full Stack Engineer | CloudVibe Technologies (2022 - Present)
+- Engineered responsive user interfaces for SaaS analytics dashboard using React, TypeScript, and Tailwind CSS, increasing user engagement by 32% across 250,000 monthly active users.
+- Designed and implemented 28+ scalable RESTful microservices with Node.js and Express, maintaining 99.98% uptime and handling 8,000 requests per second.
+- Optimized PostgreSQL relational queries and database indexing strategies, reducing query latency by 55% on datasets exceeding 50 million records.
+- Automated end-to-end testing pipelines with Jest and Cypress in GitHub Actions CI/CD, decreasing production bug rates by 40%.
+
+Full Stack Web Developer | Apex Interactive (2020 - 2022)
+- Built customer-facing e-commerce portal with React, Node.js, and MongoDB, processing $4.2M in annual gross merchandise volume.
+- Integrated secure third-party payment gateways (Stripe, PayPal) and automated webhook handling with zero payment discrepancy incidents.
+- Containerized development and staging environments using Docker, cutting developer onboarding time from 3 days to under 30 minutes.
+
+EDUCATION
+Bachelor of Science in Software Engineering | University of Washington (2020)
+
+PROJECTS
+- DevPulse Task Manager: Full-stack collaborative project management platform built with React, Node.js, Express, and WebSockets.
+- OpenAPI Schema Generator: Node.js CLI tool for validating and generating OpenAPI schemas with 1,200+ npm downloads.
+
+CERTIFICATIONS
+- Meta Certified Front-End Developer
+- AWS Certified Cloud Practitioner

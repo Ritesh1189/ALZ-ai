@@ -1,0 +1,37 @@
+Alex Rivera - Senior AI & Machine Learning Engineer
+Email: alex.rivera@email.com | Phone: +1 (555) 234-5678 | San Francisco, CA
+LinkedIn: linkedin.com/in/alexrivera-ai | GitHub: github.com/alexrivera-ml
+
+PROFESSIONAL SUMMARY
+Senior Machine Learning & AI Engineer with 5+ years of experience designing scalable deep learning systems, fine-tuning large language models (LLMs), building enterprise Retrieval-Augmented Generation (RAG) platforms, and deploying production microservices on AWS Kubernetes clusters. Proven track record of reducing query latency by 45% and optimizing inference costs by $320K annually.
+
+TECHNICAL SKILLS
+- Programming Languages: Python, C++, SQL, Bash, Go
+- Machine Learning & AI: PyTorch, Scikit-Learn, Deep Learning, Transformers, Hugging Face, LLM, RAG, LangChain, Vector Databases, Chroma, FAISS, XGBoost
+- MLOps & DevOps: Docker, Kubernetes, AWS, Git, CI/CD, Linux, MLOps, MLflow, FastAPI, Triton Inference Server
+- Data & Analytics: Pandas, NumPy, Feature Engineering, Model Evaluation, EDA
+
+PROFESSIONAL EXPERIENCE
+Senior Machine Learning Engineer | HyperScale AI (2022 - Present)
+- Architected and deployed an enterprise Retrieval-Augmented Generation (RAG) platform using PyTorch, LangChain, and Chroma vector database, serving 120,000 daily queries with 45% lower latency.
+- Fine-tuned open-source Transformer models (Llama 3, Mistral) with Hugging Face PEFT/LoRA, boosting multi-class document classification accuracy by 18% and achieving a 94.2% F1-score.
+- Containerized model inference pipelines using Docker and orchestrated zero-downtime rolling deployments on AWS EKS with Kubernetes, reducing cloud compute costs by $320,000 annually.
+- Spearheaded automated CI/CD and MLOps pipelines using GitHub Actions and MLflow, eliminating manual model deployment steps and reducing release cycles from 2 weeks to 2 hours.
+
+Machine Learning Engineer | DataCore Systems (2020 - 2022)
+- Built predictive customer churn and lifetime value models with Scikit-Learn and XGBoost, increasing enterprise customer retention by 14% and saving $1.4M in recurring revenue.
+- Developed automated feature engineering and exploratory data analysis (EDA) pipelines in Pandas and NumPy, handling 25M daily transaction records.
+- Engineered high-throughput RESTful model scoring APIs using FastAPI, achieving sub-25ms response times under 5,000 concurrent requests.
+- Collaborated with cross-functional product and engineering teams to establish automated data drift detection and model retraining alerts.
+
+EDUCATION
+Master of Science in Computer Science (Machine Learning Specialization) | Stanford University (2020)
+Bachelor of Science in Computer Engineering | University of California, Berkeley (2018)
+
+PROJECTS
+- Open-Source Multimodal RAG Assistant: Built an open-source multimodal research agent with PyTorch, FastAPI, Docker, and Qdrant vector database with 2,400+ GitHub stars.
+- Real-Time Feature Store Pipeline: Implemented an automated streaming feature pipeline using Python, Redis, and Kafka with sub-5ms feature retrieval latency.
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect Associate (SAA-C03)
+- DeepLearning.AI MLOps Specialization

@@ -1,0 +1,47 @@
+RITESH NATHARAM TURE
+B.E. - Computer Science & Engineering
+Phone: +91-8983497601, +91-9657447301
+Email: tureritesh413@gmail.com, riteshture089@gmail.com
+Location: Pune, Maharashtra, India - 411033
+
+EDUCATION
+D.Y. Patil College of Engineering, Akurdi | 2023 - 2027
+B.E. - Computer Science & Engineering | CGPA: 7.80 / 10
+
+Late Rangnathrao Kaldate Guruji higher and secondary college parbhani, Parbhani | 2023
+12th | MSBSHSE | Percentage: 68.33 / 100
+
+Aurbindo Aksharjyoti School Parbhani, Parbhani | 2021
+10th | MSBSHSE | Percentage: 82 / 100
+
+INTERNSHIPS
+The Develepors Arena | IT / Computers - Software | 10 Jan, 2026 - 10 Feb, 2026
+Pune
+Key Skills: Python, MySQL, Pandas, CRUD Operations, Data Management, File Handling
+Developed a Contact Management System using Python to manage contact information efficiently. Implemented core functionalities to add, view, search, update, and delete contact records. Applied Python programming concepts, data handling, and problem-solving skills to build a functional application. Improved practical software development skills through hands-on project implementation and testing.
+
+PROJECTS
+AI Resume Analyzer and Job Recommendation System
+Key Skills: Python, Streamlit, NLP, Scikit-learn, TF-IDF, Cosine Similarity, Pandas, NumPy, pypdf, python-docx, CSV, Machine Learning, Recommender Systems
+• Tech Stack: Python, Streamlit, NLP, Scikit-learn, TF-IDF, Cosine Similarity, Pandas, NumPy, pypdf, python-docx, CSV
+• Developing an NLP-based application using Python, Scikit-learn, and Streamlit to analyze resumes, extract technical skills, calculate job-role matching scores using TF-IDF and cosine similarity, recommend suitable job roles, identify skill gaps, and generate personalized learning roadmaps.
+
+Skill Match Job Portal
+Key Skills: React.js, Spring Boot, MongoDB Atlas, Swagger UI, REST APIs, Java, Full Stack Development
+• Tech Stack: React.js, Spring Boot, MongoDB Atlas, Swagger UI, REST APIs
+• Built a full-stack job portal using React.js, Spring Boot, and MongoDB Atlas to match job seekers with recruiters based on skills, reducing job search time by 40%.
+• This job portal connects job seekers and recruiters through skill-based job matching. Built an interactive frontend using React.js and developed backend REST APIs using Spring Boot. Integrated MongoDB Atlas for data storage and Swagger UI for API documentation and testing.
+
+POSITIONS OF RESPONSIBILITY
+ACM Documentation and Content Creator Head
+As the Documentation and Content Creator Head of ACM, I lead the creation, management, and presentation of all official content and documentation. I ensure accurate event records, engaging digital content, and consistent branding across platforms while coordinating with different teams to effectively showcase ACM's activities and achievements. I strategize content planning and storytelling to effectively communicate ACM's vision, initiatives, and technical impact to a wider audience.
+
+PERSONAL DETAILS
+Gender: Male
+Marital Status: Single
+Date of Birth: 06 Nov, 2005
+Known Languages: English, Marathi, Hindi
+Current Address: gurudwara chowk ,akurdi railway station pune, Pune, Maharashtra, India - 411033
+Permanent Address: AT. SIMANGAON TQ. SELU DIST PARBHANI, bori parbhani, Parbhani, Maharashtra, India - 431401
+Phone Numbers: +91-8983497601, +91-9657447301
+Emails: tureritesh413@gmail.com , riteshture089@gmail.com

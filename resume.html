@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RITESH NATHARAM TURE - D.Y. Patil Resume Format</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #1a202c;
+      background-color: #f8fafc;
+      line-height: 1.35;
+      font-size: 11px;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .toolbar-title {
+      font-weight: 700;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      background: #0088cc;
+      color: #ffffff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 11.5px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn:hover {
+      background: #0077b5;
+    }
+
+    .btn-secondary {
+      background: #334155;
+    }
+
+    .btn-secondary:hover {
+      background: #475569;
+    }
+
+    .resume-page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 16px auto;
+      background: #ffffff;
+      padding: 12mm 15mm 10mm 15mm;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    .header-table {
+      width: 100%;
+      margin-bottom: 6px;
+      border-collapse: collapse;
+    }
+
+    .header-logo-col {
+      width: 130px;
+      vertical-align: top;
+    }
+
+    .dyp-logo-card {
+      background: #000000;
+      color: #ffffff;
+      width: 125px;
+      height: 68px;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 6px 8px;
+    }
+
+    .dyp-text {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      line-height: 1;
+      font-family: 'Arial Black', Arial, sans-serif;
+      color: #ffffff;
+    }
+
+    .dyp-text span {
+      color: #0088cc;
+    }
+
+    .dyp-subtext {
+      font-size: 5.5px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      color: #bfa15f;
+      text-transform: uppercase;
+      margin-top: 5px;
+      line-height: 1.1;
+    }
+
+    .header-info-col {
+      text-align: right;
+      vertical-align: top;
+    }
+
+    .candidate-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0088cc;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    .candidate-role {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 2px;
+    }
+
+    .candidate-meta {
+      font-size: 10.5px;
+      color: #334155;
+      line-height: 1.35;
+    }
+
+    .candidate-meta a {
+      color: #0088cc;
+      text-decoration: none;
+    }
+
+    .section-banner {
+      background-color: #0088cc;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3.5px 8px;
+      margin-top: 8px;
+      margin-bottom: 6px;
+      border-radius: 2px;
+    }
+
+    .edu-entry {
+      margin-bottom: 6px;
+    }
+
+    .row-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .institution-name {
+      font-size: 11px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .date-badge {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #1e293b;
+      white-space: nowrap;
+    }
+
+    .edu-details {
+      font-size: 10.5px;
+      color: #334155;
+      margin-top: 1px;
+    }
+
+    .edu-details sup {
+      font-size: 7.5px;
+    }
+
+    .item-block {
+      margin-bottom: 6px;
+    }
+
+    .item-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-subtitle {
+      font-size: 10.5px;
+      color: #475569;
+      margin-bottom: 2px;
+    }
+
+    .skills-row {
+      margin: 2px 0 4px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .skills-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-right: 2px;
+    }
+
+    .skill-pill {
+      display: inline-block;
+      background-color: #f1f5f9;
+      color: #1e293b;
+      border: 1px solid #cbd5e1;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 9.8px;
+      font-weight: 500;
+      line-height: 1.25;
+    }
+
+    .desc-text {
+      font-size: 10.2px;
+      color: #27272a;
+      line-height: 1.35;
+      text-align: justify;
+    }
+
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 14px;
+      margin-top: 2px;
+    }
+
+    .bullet-list li {
+      font-size: 10.2px;
+      color: #27272a;
+      line-height: 1.35;
+      margin-bottom: 2px;
+      text-align: justify;
+    }
+
+    .bullet-list li strong {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .responsibility-block {
+      margin-bottom: 6px;
+    }
+
+    .resp-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+
+    .details-grid {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2px;
+    }
+
+    .details-grid td {
+      vertical-align: top;
+      padding: 1.5px 0;
+      font-size: 10.2px;
+      line-height: 1.35;
+    }
+
+    .details-grid .col-left {
+      width: 50%;
+      padding-right: 12px;
+    }
+
+    .details-grid .col-right {
+      width: 50%;
+      padding-left: 6px;
+    }
+
+    .field-label {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .field-val {
+      color: #27272a;
+    }
+
+    .field-val a {
+      color: #0088cc;
+      text-decoration: none;
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        font-size: 10.5px;
+      }
+
+      .no-print, .toolbar {
+        display: none !important;
+      }
+
+      .resume-page {
+        width: 100% !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+      }
+
+      .section-banner {
+        background-color: #0088cc !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .dyp-logo-card {
+        background: #000000 !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .skill-pill {
+        background-color: #f1f5f9 !important;
+        border: 1px solid #cbd5e1 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 8mm 12mm 8mm 12mm;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+        <div class="toolbar no-print">
+          <div class="toolbar-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span>Placement Resume Format & Preview</span>
+          </div>
+          <div class="toolbar-actions">
+            <button class="btn btn-secondary" onclick="toggleEditMode()" id="editBtn">
+              Edit Content
+            </button>
+            <button class="btn" onclick="window.print()">
+              Print / Save as PDF (Ctrl + P)
+            </button>
+          </div>
+        </div>
+        
+
+  <div class="resume-page" id="resumeContent">
+    
+    <!-- HEADER -->
+    <table class="header-table">
+      <tr>
+        <td class="header-logo-col">
+          <div class="dyp-logo-card">
+            <div class="dyp-text">DYP</div>
+            <div class="dyp-subtext">DR. D. Y. PATIL PRATISHTHAN</div>
+          </div>
+        </td>
+        <td class="header-info-col">
+          <div class="candidate-name">RITESH NATHARAM TURE</div>
+          <div class="candidate-role">B.E. - Computer Science & Engineering</div>
+          <div class="candidate-meta">Ph: +91-8983497601</div>
+          <div class="candidate-meta">Email: <a href="mailto:tureritesh413@gmail.com">tureritesh413@gmail.com</a></div>
+          <div class="candidate-meta">Simangaon , Parbhani</div>
+        </td>
+      </tr>
+    </table>
+
+    
+        <div class="section-banner">PROFESSIONAL SUMMARY</div>
+        <div style="padding: 8px 16px 10px 16px; font-size: 11px; color: #334155; line-height: 1.45;">
+          I am a motivated student pursuing BE in CSE at Dr.D.Y Patil College of Engineering, Akurdi Pune. I am proficient in Python, C++, Strong problem-solving skills, with experience in [relevent projects or internships]. Eager to apply technical knowledge to contribute to innovative projects.
+        </div>
+        
+
+    
+        <div class="section-banner">EDUCATION</div>
+        
+            <div class="edu-entry">
+              <div class="row-flex">
+                <div class="institution-name">Dr.D.Y Patil College of Engineering, Akurdi Pune.</div>
+                <div class="date-badge">Aug 2023 - Aug 2027</div>
+              </div>
+              <div class="edu-details">
+                B.E. - Computer Science & Engineering &nbsp;|&nbsp; <strong>Completed</strong>
+              </div>
+            </div>
+            
+            <div class="edu-entry">
+              <div class="row-flex">
+                <div class="institution-name">Late. R.K Guruji Sec & Higher-Sec School Parbhani, Tq. Dist. Parbhani</div>
+                <div class="date-badge">Mar 2022 - Feb 2023</div>
+              </div>
+              <div class="edu-details">
+                12<sup>th</sup> | HSE Board &nbsp;|&nbsp; <strong>Percentage: 68.33%</strong>
+              </div>
+            </div>
+            
+            <div class="edu-entry">
+              <div class="row-flex">
+                <div class="institution-name">Aurbindo Aksharjyoti school Parbhani, Tq. Dist. Parbhani</div>
+                <div class="date-badge">Mar 2020 - Feb 2021</div>
+              </div>
+              <div class="edu-details">
+                10<sup>th</sup> | SSC Board &nbsp;|&nbsp; <strong>Percentage: 82.00%</strong>
+              </div>
+            </div>
+            
+        
+
+    
+
+    
+        <div class="section-banner">PROJECTS</div>
+        
+            <div class="item-block">
+              <div class="item-title">Daily Task Tracker</div>
+              <div class="skills-row">
+                <span class="skills-label">Key Skills:</span>
+                <span class="skill-pill">css</span><span class="skill-pill">html</span><span class="skill-pill">javascript</span>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Tech Stack:</strong> HTML,CSS,JAVASCRIPT,API</li><li>It features a comprehensive admin dashboard for user management, supports up to 50 tasks per day, displays engaging reminder widgets in Hindi and English, and uses secure password authentication to provide each user with a personalized experience for achieving their goals.</li>
+              </ul>
+            </div>
+            
+            <div class="item-block">
+              <div class="item-title">SkillMatch - Job Portal</div>
+              <div class="skills-row">
+                <span class="skills-label">Key Skills:</span>
+                <span class="skill-pill">mongodb</span><span class="skill-pill">mongodb atlas</span><span class="skill-pill">react</span><span class="skill-pill">spring boot</span><span class="skill-pill">swagger</span>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Tech Stack:</strong> React.js, Spring Boot, MongoDB Atlas, Swagger UI</li><li>Built a full-stack job portal using React.js, Spring Boot, and MongoDB Atlas to match job seekers with recruiters based on skills, reducing job search time by 40%.</li>
+              </ul>
+            </div>
+            
+            <div class="item-block">
+              <div class="item-title">Employee Salary Prediction</div>
+              <div class="skills-row">
+                <span class="skills-label">Key Skills:</span>
+                <span class="skill-pill">lightgbm</span><span class="skill-pill">machine learning</span><span class="skill-pill">python</span><span class="skill-pill">scikit-learn</span><span class="skill-pill">streamlit</span>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Tech Stack:</strong> Python, ML Frameworks: LightGBM, scikit-learn, Web App: Streamlit</li><li>Developed a predictive system to classify whether an individual's income exceeds</li><li>$50K/year using demographic and occupational data. Built and deployed a web app using Streamlit, achieving high accuracy with the LightGBM classifier.</li>
+              </ul>
+            </div>
+            
+        
+
+    
+        <div class="section-banner">CERTIFICATIONS</div>
+        <div style="padding: 6px 16px 10px 16px;">
+          <ul class="bullet-list">
+            <li>NVDIA Fundamentals of Deep Learning</li><li>Infosys SpringBoard</li><li>TATA FORGE Cybersecurity Analyst Job Simulation</li><li>Certificate for securing Third rank in the quizon the value added course in python conducted by college.</li>
+          </ul>
+        </div>
+        
+
+    
+        <div class="section-banner">POSITIONS OF RESPONSIBILITY</div>
+        <div class="responsibility-block">
+          <div class="resp-title">Google Cloud Arcade Facilitator Program - Cohort 1 2025</div>
+          <p class="desc-text">Leadership and extracurricular responsibility.</p>
+        </div>
+        
+
+    <!-- PERSONAL DETAILS -->
+    <div class="section-banner">PERSONAL DETAILS</div>
+
+    <table class="details-grid">
+      <tr>
+        <td class="col-left">
+          <div><span class="field-label">Gender:</span> <span class="field-val">Not Specified</span></div>
+          <div><span class="field-label">Marital Status:</span> <span class="field-val">Not Specified</span></div>
+          <div>
+            <span class="field-label">Current Address:</span> 
+            <span class="field-val">Simangaon , Parbhani</span>
+          </div>
+          <div style="margin-top:2px;">
+            <span class="field-label">Emails:</span> 
+            <span class="field-val">tureritesh413@gmail.com</span>
+          </div>
+        </td>
+        <td class="col-right">
+          <div><span class="field-label">Date of Birth:</span> <span class="field-val"></span></div>
+          <div><span class="field-label">Known Languages:</span> <span class="field-val">English, Hindi, Marathi</span></div>
+          <div>
+            <span class="field-label">Permanent Address:</span> 
+            <span class="field-val">Simangaon , Parbhani</span>
+          </div>
+          <div style="margin-top:2px;">
+            <span class="field-label">Phone Numbers:</span> 
+            <span class="field-val">+91-8983497601</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <script>
+    let isEditing = false;
+    function toggleEditMode() {
+      const page = document.getElementById('resumeContent');
+      const btn = document.getElementById('editBtn');
+      isEditing = !isEditing;
+      page.contentEditable = isEditing;
+      if (isEditing) {
+        btn.innerText = 'Save / Lock Edits';
+        btn.style.background = '#10b981';
+      } else {
+        btn.innerText = 'Edit Content';
+        btn.style.background = '#334155';
+      }
+    }
+  </script>
+</body>
+</html>

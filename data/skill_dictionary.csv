@@ -1,0 +1,116 @@
+skill,category,aliases
+python,Programming Languages,python|py
+r,Programming Languages,r language|r programming|\br\b
+java,Programming Languages,java
+c++,Programming Languages,c\+\+|cpp
+c#,Programming Languages,c\#|csharp
+c,Programming Languages,\bc\b
+javascript,Programming Languages,javascript|js
+typescript,Programming Languages,typescript|ts
+sql,Programming Languages,sql|structured query language
+bash,Programming Languages,bash|shell scripting|shell script
+scala,Programming Languages,scala
+go,Programming Languages,golang|\bgo\b
+rust,Programming Languages,rust
+html,Web and Frontend,html|html5
+css,Web and Frontend,css|css3
+react,Web and Frontend,react|reactjs|react\.js
+angular,Web and Frontend,angular|angularjs
+vue,Web and Frontend,vue|vuejs|vue\.js
+node.js,Web and Backend,node\.js|nodejs|node js
+express,Web and Backend,express|expressjs|express\.js
+django,Web and Backend,django
+flask,Web and Backend,flask
+fastapi,Web and Backend,fastapi
+rest apis,Web and Backend,rest apis|restful apis|rest api|restful api|rest
+graphql,Web and Backend,graphql
+tailwind css,Web and Frontend,tailwind|tailwind css|tailwindcss
+bootstrap,Web and Frontend,bootstrap
+pandas,Data Science and Analytics,pandas
+numpy,Data Science and Analytics,numpy
+scipy,Data Science and Analytics,scipy
+excel,Data Science and Analytics,excel|ms excel|advanced excel
+power bi,Data Science and Analytics,power bi|powerbi
+tableau,Data Science and Analytics,tableau
+matplotlib,Data Science and Analytics,matplotlib
+seaborn,Data Science and Analytics,seaborn
+statistics,Data Science and Analytics,statistics|statistical analysis|statistical modeling
+data visualization,Data Science and Analytics,data visualization|data visualisations
+data cleaning,Data Science and Analytics,data cleaning|data cleansing|data preprocessing
+eda,Data Science and Analytics,eda|exploratory data analysis
+machine learning,Machine Learning,machine learning|ml
+scikit-learn,Machine Learning,scikit-learn|sklearn
+deep learning,Machine Learning,deep learning|dl
+pytorch,Machine Learning,pytorch|torch
+tensorflow,Machine Learning,tensorflow|tf
+keras,Machine Learning,keras
+xgboost,Machine Learning,xgboost
+lightgbm,Machine Learning,lightgbm
+random forest,Machine Learning,random forest|random forests
+feature engineering,Machine Learning,feature engineering
+model evaluation,Machine Learning,model evaluation|model validation|cross-validation
+hyperparameter tuning,Machine Learning,hyperparameter tuning|hyperparameter optimization
+nlp,NLP and LLMs,nlp|natural language processing
+transformers,NLP and LLMs,transformers|transformer models
+hugging face,NLP and LLMs,hugging face|huggingface
+bert,NLP and LLMs,bert
+spacy,NLP and LLMs,spacy
+nltk,NLP and LLMs,nltk
+llm,NLP and LLMs,llm|large language models|large language model|llms
+rag,NLP and LLMs,rag|retrieval augmented generation
+prompt engineering,NLP and LLMs,prompt engineering
+langchain,NLP and LLMs,langchain
+llamaindex,NLP and LLMs,llamaindex|llama index
+vector databases,NLP and LLMs,vector databases|vector db|chromadb|pinecone|faiss|milvus|qdrant
+text preprocessing,NLP and LLMs,text preprocessing|tokenization|lemmatization
+computer vision,Computer Vision,computer vision|cv
+opencv,Computer Vision,opencv
+cnn,Computer Vision,cnn|convolutional neural networks|convolutional neural network
+yolo,Computer Vision,yolo
+image processing,Computer Vision,image processing|image segmentation|object detection
+resnet,Computer Vision,resnet
+aws,Cloud and DevOps,aws|amazon web services
+azure,Cloud and DevOps,azure|microsoft azure
+gcp,Cloud and DevOps,gcp|google cloud platform|google cloud
+docker,Cloud and DevOps,docker|containerization
+kubernetes,Cloud and DevOps,kubernetes|k8s
+git,Cloud and DevOps,git
+github,Cloud and DevOps,github
+ci/cd,Cloud and DevOps,ci/cd|cicd|continuous integration|continuous deployment
+linux,Cloud and DevOps,linux|unix
+terraform,Cloud and DevOps,terraform
+jenkins,Cloud and DevOps,jenkins
+mlops,Cloud and DevOps,mlops|machine learning operations
+mlflow,Cloud and DevOps,mlflow
+dvc,Cloud and DevOps,dvc|data version control
+postgresql,Databases,postgresql|postgres
+mysql,Databases,mysql
+sqlite,Databases,sqlite
+mongodb,Databases,mongodb|mongo
+redis,Databases,redis
+snowflake,Databases,snowflake
+bigquery,Databases,bigquery
+oracle,Databases,oracle database|oracle
+dynamodb,Databases,dynamodb
+neo4j,Databases,neo4j|graph database
+.net,Programming Languages,\.net|dotnet|\.net core|asp\.net
+unit testing,Software Engineering,unit testing|pytest|unittest|tdd
+system design,Software Engineering,system design|software architecture
+data structures,Software Engineering,data structures|dsa
+algorithms,Software Engineering,algorithms|algorithm design
+oop,Software Engineering,oop|object oriented programming|object-oriented programming
+agile,Software Engineering,agile|scrum|kanban
+jira,Tools and Collaboration,jira
+postman,Tools and Collaboration,postman
+streamlit,Web and Backend,streamlit
+gradio,Web and Backend,gradio
+spark,Data Science and Analytics,apache spark|spark|pyspark
+hadoop,Data Science and Analytics,hadoop
+kafka,Data Science and Analytics,kafka|apache kafka
+airflow,Data Science and Analytics,airflow|apache airflow
+spring boot,Web and Backend,spring boot|springboot|spring-boot|spring framework
+tf-idf,Machine Learning and AI,tf-idf|tfidf|term frequency inverse document frequency
+recommender systems,Machine Learning and AI,recommender systems|recommendation system|recommendation engines|collaborative filtering
+swagger,Web and Backend,swagger|swagger ui|openapi
+mongodb atlas,Database Technologies,mongodb atlas|mongo atlas
+crud,Software Engineering,crud|crud operations

@@ -1,0 +1,35 @@
+Jordan Taylor - Senior Data Analyst & BI Specialist
+Email: jordan.taylor@analytics.net | Phone: +1 (555) 345-6789 | Chicago, IL
+LinkedIn: linkedin.com/in/jordantaylor-bi | Portfolio: jordantaylor.data
+
+PROFESSIONAL SUMMARY
+Results-driven Senior Data Analyst with 4+ years of experience transforming complex commercial datasets into actionable business intelligence. Expert in advanced SQL querying, data cleaning and exploratory data analysis (EDA) with Python and Pandas, spreadsheet modeling in Excel, and interactive executive dashboards in Power BI and Tableau.
+
+TECHNICAL SKILLS
+- Querying & Manipulation: SQL, Python, Pandas, NumPy, Data Cleaning, EDA
+- Business Intelligence & Reporting: Power BI, Tableau, Excel, Data Visualization, DAX
+- Analytical Methodologies: Statistics, A/B Testing, Cohort Analysis, Predictive Modeling
+- Tools: Git, Jupyter Notebooks, PostgreSQL, Snowflake
+
+WORK EXPERIENCE
+Senior Data Analyst | Horizon Retail Group (2022 - Present)
+- Designed and maintained 15+ automated executive Power BI dashboards tracking $85M in quarterly inventory, revenue, and churn metrics.
+- Executed complex SQL analytical queries (window functions, recursive CTEs, multidimensional joins) on Snowflake data warehouse, speeding up weekly reporting cycles by 60%.
+- Conducted exploratory data analysis (EDA) and customer segmentation using Python and Pandas, identifying $2.3M in underperforming product categories.
+- Formulated rigorous A/B testing frameworks and evaluated statistical significance on e-commerce conversion funnels, resulting in an 8.5% lift in checkout conversion.
+
+Data Analyst | Midwest Financial Services (2020 - 2022)
+- Built automated data cleaning and reconciliation pipelines using Python and Excel Power Query, eliminating 15 hours of manual weekly audit work.
+- Developed interactive Tableau dashboards for credit risk monitoring, adopted by 40+ loan officers across regional branches.
+- Performed descriptive statistical analysis and variance modeling to support annual financial budgeting and forecasting.
+
+EDUCATION
+Bachelor of Science in Statistics & Economics | University of Illinois Urbana-Champaign (2020)
+
+PROJECTS
+- E-Commerce Sales Intelligence Suite: End-to-end Python and Tableau analytics project analyzing 500,000 transactions to forecast monthly sales trends.
+- Automated Customer Churn Dashboard: SQL and Power BI dashboard demonstrating cohort retention curves and key risk indicators.
+
+CERTIFICATIONS
+- Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+- Google Data Analytics Professional Certificate
