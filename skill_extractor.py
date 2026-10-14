@@ -74,8 +74,7 @@ class SkillExtractor:
 
                     # Escape all aliases safely and build standard word-boundary regex
                     patterns = [rf"\b{re.escape(alias)}\b" for alias in alias_list]
-                    combined_pattern = re.compile(rf"({'|'.join(patterns)})", re.IGNORECASE)
-                    compiled_pattern = combined_pattern
+                    compiled_pattern = re.compile(rf"({'|'.join(patterns)})", re.IGNORECASE)
 
                 self.skills_data.append({
                     "skill": skill_canonical,

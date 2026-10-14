@@ -5,7 +5,7 @@ while carefully preserving critical technical symbols such as C++, C#, and .NET.
 """
 
 import re
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 
 TOKEN_PROTECTION_MAP = {

@@ -12,7 +12,7 @@ os.environ["OPENBLAS_NUM_THREADS"] = "1"
 os.environ["OMP_NUM_THREADS"] = "1"
 os.environ["MKL_NUM_THREADS"] = "1"
 
-from text_cleaner import clean_text, extract_sections
+from text_cleaner import clean_text
 from resume_parser import parse_resume, validate_file
 from skill_extractor import get_skill_extractor
 from recommender import get_job_recommender

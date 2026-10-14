@@ -12,22 +12,21 @@ os.environ["MKL_NUM_THREADS"] = "1"
 import re
 import json
 import time
+import traceback
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 
 import streamlit as st
 import pandas as pd
-import numpy as np
 import plotly.graph_objects as go
-import plotly.express as px
 
 from text_cleaner import clean_text, extract_sections
 from resume_parser import parse_resume, validate_file
 from skill_extractor import get_skill_extractor
 from recommender import get_job_recommender
-from ats_scorer import get_ats_scorer
+from ats_scorer import get_ats_scorer, STRONG_ACTION_VERBS
 from gap_analyzer import get_gap_analyzer
-from resume_formatter import render_dyp_resume_html, DEFAULT_PROFILE
+from resume_formatter import render_dyp_resume_html
 from resume_standardizer import get_resume_standardizer
 import streamlit.components.v1 as components
 import auth_manager
@@ -741,8 +740,6 @@ def render_auth_gateway():
             with btn_col2:
                 if st.button("⚡ 1-Click Demo", key="btn_quick_demo", use_container_width=True):
                     success, message, user = auth_manager.authenticate_user("admin@alzai.com", "password123")
-                    if not success:
-                        success, message, user = auth_manager.authenticate_user("admin@talentiq.ai", "password123")
                     if success and user:
                         st.session_state["authenticated"] = True
                         st.session_state["user_email"] = user["email"]
@@ -1067,15 +1064,13 @@ try:
     st.session_state["standardized_html"] = standardized_html
 
     # Sections and Word Count for downstream diagnostics
-    std_sections = extract_sections(standardized_text)
-    sections = std_sections
-    std_word_count = len(standardized_text.split())
-    word_count = std_word_count
+    sections = extract_sections(standardized_text)
+    word_count = len(standardized_text.split())
 
     # STEP 2: EXTRACT RELEVANT TECHNICAL SKILLS FROM THE STANDARDIZED RESUME
     skills_res = skill_extractor.extract_skills(standardized_text)
     matched_skills = skills_res.get("matched_skills", [])
-    skills_by_category = skills_res.get("categorized_skills") or skills_res.get("by_category", {})
+    skills_by_category = skills_res.get("by_category", {})
 
     # STEP 3: ATS COMPLIANCE AUDIT ON THE STANDARDIZED RESUME
     cleaned_std_text = clean_text(standardized_text)
@@ -1083,9 +1078,9 @@ try:
     ats_res = ats_scorer.evaluate_resume(
         raw_text=standardized_text,
         cleaned_text=cleaned_std_text,
-        sections=std_sections,
+        sections=sections,
         extracted_skills=matched_skills,
-        word_count=std_word_count,
+        word_count=word_count,
     )
 
     # STEP 4: HYBRID JOB ROLE MATCHING & COMPARISON AGAINST BENCHMARK ROLES
@@ -1097,7 +1092,6 @@ try:
         semantic_weight=round(1.0 - skill_weight, 2),
     )
 except Exception as e:
-    import traceback
     st.error(f"Error analyzing document: {str(e)}")
     with st.expander("Technical Diagnostic Details"):
         st.code(traceback.format_exc(), language="text")
@@ -1116,7 +1110,7 @@ else:
 # -----------------------------------------------------------------------------
 # EXECUTIVE TOP BANNER
 # -----------------------------------------------------------------------------
-candidate_name = resume_data["file_name"].replace(".txt", "").replace(".pdf", "").replace(".docx", "").replace("_", " ").title()
+candidate_name = candidate_name or resume_data["file_name"].rsplit(".", 1)[0].replace("_", " ").title()
 
 st.markdown(
     f"""
@@ -1256,13 +1250,13 @@ st.markdown(
 # -----------------------------------------------------------------------------
 tab_formatter, tab_roles, tab_ats, tab_gap, tab_skills, tab_bullet, tab_export = st.tabs(
     [
-        " Converted Placement Resume",
-        " Job Matching & Role Alignment",
-        " ATS Health Audit",
-        " Skill Gap Roadmap",
-        " Competency Matrix",
-        " STAR Bullet Studio",
-        " Executive Report",
+        "Converted Placement Resume",
+        "Job Matching & Role Alignment",
+        "ATS Health Audit",
+        "Skill Gap Roadmap",
+        "Competency Matrix",
+        "STAR Bullet Studio",
+        "Executive Report",
     ]
 )
 
@@ -1271,7 +1265,7 @@ tab_formatter, tab_roles, tab_ats, tab_gap, tab_skills, tab_bullet, tab_export =
 # TAB 1: CONVERTED PLACEMENT RESUME (D.Y. PATIL FORMAT)
 # =============================================================================
 with tab_formatter:
-    st.markdown(" Standardized Placement Resume Document ")
+    st.markdown("### Standardized Placement Resume Document")
     st.markdown(
         "Candidate resume was first parsed, structured, and converted into the canonical **D.Y. Patil Placement Format** "
         "(cyan brand header, key skills badges, 2-column detail grid, and structured sections). "
@@ -1307,7 +1301,7 @@ with tab_formatter:
         )
 
     # Live Rendered Standardized Resume
-    st.markdown(" Live Placement Document Preview ")
+    st.markdown("### Live Placement Document Preview")
     components.html(standardized_html, height=880, scrolling=True)
 
     # Interactive Profile Customizer
@@ -1347,7 +1341,7 @@ with tab_formatter:
 # TAB 2: JOB MATCHING & ROLE ALIGNMENT
 # =============================================================================
 with tab_roles:
-    st.markdown(" Career Role Alignment & Benchmark Ranking")
+    st.markdown("### Career Role Alignment & Benchmark Ranking")
     st.markdown(
         "Standardized candidate profile evaluated against industry role specifications using hybrid ranking "
         f"({int(skill_weight*100)}% hard technical skill coverage, {int((1-skill_weight)*100)}% semantic TF-IDF relevance)."
@@ -1862,8 +1856,7 @@ with tab_bullet:
         b_words = b_clean.split()
 
         # Check action verbs
-        import ats_scorer as ats_module
-        matched_verbs = [w for w in b_words if w in ats_module.STRONG_ACTION_VERBS]
+        matched_verbs = [w for w in b_words if w in STRONG_ACTION_VERBS]
         has_verbs = len(matched_verbs) > 0
 
         # Check metrics
@@ -2003,5 +1996,5 @@ with tab_export:
             use_container_width=True,
         )
 
-    st.markdown(" Document Preview")
+    st.markdown("### Document Preview")
     st.text_area("Audit Preview", value=report_md, height=320)

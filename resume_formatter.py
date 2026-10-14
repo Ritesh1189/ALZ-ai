@@ -3,8 +3,7 @@ Resume Formatter Module - D.Y. Patil College / Professional ATS Placement Templa
 Generates pixel-perfect, print-to-PDF ready HTML resumes matching the official format.
 """
 
-from typing import Dict, Any, Optional, List
-import json
+from typing import Dict, Any, Optional
 
 
 DEFAULT_PROFILE = {

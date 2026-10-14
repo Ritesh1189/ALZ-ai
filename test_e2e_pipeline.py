@@ -68,63 +68,6 @@ def run_tests():
     print("   Matched Skills:", custom_eval["matched_skills"])
     print("   Missing Skills:", custom_eval["missing_skills"])
 
-    # Test user's actual uploaded PDF if present
-    pdf_path = Path(r"C:\Users\HP\.gemini\antigravity-ide\brain\a3fdcc66-3df3-4659-8afa-857f510b2eff\.user_uploaded\media_1791910213941.pdf")
-    if pdf_path.exists():
-        print("\n--- 7. Testing User Uploaded PDF (LTM resume.pdf) ---")
-        with open(pdf_path, "rb") as f:
-            pdf_bytes = f.read()
-        parsed_pdf = parse_resume("LTM resume.pdf", pdf_bytes)
-        print("PDF Parsed successfully! Words:", parsed_pdf["word_count"])
-
-        std_pdf = get_resume_standardizer().standardize(parsed_pdf["raw_text"], "LTM resume.pdf", parsed_pdf["sections"])
-        print("Standardized PDF Profile Name:", std_pdf["name"])
-        print("Standardized PDF Skills:", std_pdf["skills"])
-
-        cleaned_pdf_text = clean_text(std_pdf["formatted_text"])
-        pdf_recs = recommender.match_roles(
-            candidate_skills=std_pdf["skills"],
-            resume_text=cleaned_pdf_text,
-            top_n=3,
-        )
-        print("PDF Top Matched Roles:")
-        for r in pdf_recs:
-            print("   -", r["role_name"], ":", r["match_score"], "%")
-
-    # Test user's actual uploaded DOCX if present
-    docx_path = Path(r"C:\Users\HP\Downloads\Aditya Kale Resume.docx")
-    if docx_path.exists():
-        print("\n--- 8. Testing User Uploaded DOCX (Aditya Kale Resume.docx) ---")
-        with open(docx_path, "rb") as f:
-            docx_bytes = f.read()
-        parsed_docx = parse_resume("Aditya Kale Resume.docx", docx_bytes)
-        print("DOCX Parsed successfully! Words:", parsed_docx["word_count"])
-
-        std_docx = get_resume_standardizer().standardize(parsed_docx["raw_text"], "Aditya Kale Resume.docx", parsed_docx["sections"])
-        print("Standardized DOCX Profile Name:", std_docx["name"])
-        print("Role Subtitle:", std_docx["profile"]["role_subtitle"])
-        print("Education entries count:", len(std_docx["profile"]["education"]))
-        for edu in std_docx["profile"]["education"]:
-            print("  -", edu["degree"], "|", edu["institution"], "|", edu["duration"], "|", edu["grade_label"])
-        print("Projects count:", len(std_docx["profile"]["projects"]))
-        for proj in std_docx["profile"]["projects"]:
-            print("  -", proj["title"], "| Stack:", proj.get("tech_stack", ""), "| Bullets:", len(proj.get("bullets", [])))
-        print("Certifications count:", len(std_docx["profile"]["certifications"]))
-        for cert in std_docx["profile"]["certifications"]:
-            print("  -", cert)
-        print("Responsibility Title:", std_docx["profile"]["responsibility"].get("title", ""))
-
-        cleaned_docx_text = clean_text(std_docx["formatted_text"])
-        docx_sections = extract_sections(std_docx["formatted_text"])
-        ats_docx = get_ats_scorer().evaluate_resume(
-            raw_text=std_docx["formatted_text"],
-            cleaned_text=cleaned_docx_text,
-            sections=docx_sections,
-            extracted_skills=std_docx["skills"],
-            word_count=len(std_docx["formatted_text"].split()),
-        )
-        print(f"DOCX ATS Evaluation: Score = {ats_docx['overall_score']}, Grade = {ats_docx['grade']}")
-
     print("\nALL PIPELINE TESTS SUCCEEDED FLAWLESSLY!")
 
 if __name__ == "__main__":

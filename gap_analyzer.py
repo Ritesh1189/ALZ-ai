@@ -5,7 +5,7 @@ Generates actionable upskilling roadmaps, hands-on portfolio project recommendat
 and milestone timelines to bridge technical gaps.
 """
 
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 
 
 # Curated knowledge base of learning roadmaps for technical skills

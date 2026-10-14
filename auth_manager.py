@@ -1,5 +1,5 @@
 """
-auth_manager.py - Secure Local Authentication System for TalentIQ Resume Intelligence.
+auth_manager.py - Secure Local Authentication System for ALZ ai Resume Intelligence.
 Provides email-based signup, password hashing, and user credential management using SQLite.
 """
 
@@ -45,13 +45,6 @@ def init_db() -> None:
     if not user:
         register_user(
             email=demo_email,
-            password="password123",
-            full_name="ALZ ai Administrator",
-        )
-    # Also ensure legacy admin@talentiq.ai works
-    if not get_user_by_email("admin@talentiq.ai"):
-        register_user(
-            email="admin@talentiq.ai",
             password="password123",
             full_name="ALZ ai Administrator",
         )
